@@ -12,15 +12,11 @@
 
 > Eleven years of finding the manual thing and quietly making it run itself.
 
-**[The long version, with the working out →](https://allubalu.github.io/)**  ·  [LinkedIn](https://www.linkedin.com/in/prasanna-allu-7227066b/)  ·  [allubalu3@live.com](mailto:allubalu3@live.com)
+<a href="https://allubalu.github.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="cta-dark.svg"><img alt="Read the long version" src="cta.svg" width="320"></picture></a>
+
+[LinkedIn](https://www.linkedin.com/in/prasanna-allu-7227066b/) &nbsp;·&nbsp; [allubalu3@live.com](mailto:allubalu3@live.com)
 
 ---
-
-## What that has meant
-
-The work has always been to notice that, and then take it away. Claims cleared by rules instead of clerks. Audits on a phone instead of a clipboard. Approvals that stop living in someone's inbox. Logs anyone can read at 2am without waking me up.
-
-These days it is my own team's busywork on the list. A bot that reads pull requests before we do, and an MCP server that has read the documentation so nobody has to ask me.
 
 | Years shipping | Apps integrated | Requests / day | Awards | Industries |
 | ---: | ---: | ---: | ---: | ---: |
@@ -28,34 +24,18 @@ These days it is my own team's busywork on the list. A bot that reads pull reque
 
 <sub>2M+ requests / day, at sub-200ms latency · industries: health, food, property, IT</sub>
 
+**In production since.** **2015** C# & .NET, SQL Server & relational data &nbsp;·&nbsp; **2018** Tableau & Power BI &nbsp;·&nbsp; **2020** Microsoft Azure &nbsp;·&nbsp; **2022** Datadog & Splunk, Kafka & event-driven design &nbsp;·&nbsp; **2024** Agentic AI (MCP, Claude, CrewAI), React
+
+**6 awards, all at JLL.** Most recent:
+Security Champion, Apr 2026, nominated by the Vice President and Chief Architect.
+
 <details>
-<summary><b>The same thing in CV language</b></summary>
+<summary>The same thing in CV language</summary>
 <br>
 
 > Senior Full-Stack Developer and Technical Lead with 11 years' experience building production-grade, AI-augmented systems on Microsoft Azure, including APIs serving 2M+ requests/day at sub-200ms latency. Core strength is production readiness: reliability, observability and security at scale, paired with hands-on delivery of agentic AI tooling in real engineering workflows.
 
 </details>
-
----
-
-## The route
-
-```mermaid
-timeline
-    section Studying computer science
-        2008-2011 : Diploma, CSE
-        2011-2014 : B.Tech, CSE
-    section US healthcare & EDI
-        2015-2018 : Software Engineer
-    section Food safety
-        2018-2019 : BI Developer
-    section Commercial real estate & enterprise IT
-        2020-2022 : Developer Associate
-        2022-2024 : Software Engineer 2
-        2024-now : Senior Full-Stack Dev
-```
-
-<sub>The banner draws the same years to scale; this names the posts.</sub>
 
 ---
 
@@ -75,35 +55,6 @@ Eleven years of this work sits in private repositories at two employers: a claim
 
 ---
 
-## Stack, by the year it started
-
-| Since | |
-| :--- | :--- |
-| `2015` | C# & .NET · SQL Server & relational data |
-| `2018` | Tableau & Power BI |
-| `2020` | Microsoft Azure |
-| `2022` | Datadog & Splunk · Kafka & event-driven design |
-| `2024` | Agentic AI (MCP, Claude, CrewAI) · React |
-
-<sub>Years in production, not self-rated proficiency.</sub>
-
----
-
-## Recognition
-
-6 awards, all at JLL.
-
-| | |
-| :--- | :--- |
-| **Security Champion** | Apr 2026 · nominated by the Vice President and Chief Architect |
-| **Domain Expertise & Adaptability** | Sep 2025 |
-| **TAT UI Go Live** | Sep 2025 |
-| **Subject Matter Expert: Datadog** | Oct 2024 |
-| **JLLT Technology Engineering Award** | Jan 2024 |
-| **Certificate of Appreciation** | Sep 2020 |
-
----
-
 ## Credentials
 
 | | Issuer | |
@@ -118,6 +69,4 @@ Eleven years of this work sits in private repositories at two employers: a claim
 
 <sub>Every figure here is read from one source file. Impact percentages are self-reported and unaudited; ask, and I will explain how each was measured. A few entries are stated from memory rather than a certificate. Drawings are original.</sub>
 
-The rest of it — the projects, the people I worked with, where the habit started — is at **[allubalu.github.io](https://allubalu.github.io/)**.
-
-<sub>There is always another manual thing. If yours has a name, I would like to hear it.</sub>
+There is always another manual thing. If yours has a name, I would like to hear it. The projects, the people I worked with and where the habit started are at **[allubalu.github.io](https://allubalu.github.io/)**.

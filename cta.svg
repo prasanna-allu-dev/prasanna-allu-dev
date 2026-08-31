@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 46" width="320" height="46" role="img" aria-label="Read the long version"><title>Read the long version</title><style>
+    svg {
+      --ink:#0B131D; --ink-2:#46566A; --ink-3:#55647A;
+      --panel:#FFFFFF;
+      --paper:#FFFFFF;
+      --era-1:#4A4FC4; --era-2:#0073BD; --era-3:#007F98; --era-4:#007A61; --era-5:#826314; --era-6:#BA671B;
+      --line: var(--ink); --tone: var(--ink-3);
+      --c1: var(--era-1); --c2: var(--era-3); --c3: var(--era-4);
+      --c4: var(--era-6); --c5: var(--era-2);
+    }
+    text { font-family: ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; }
+
+    /* Idle loops, running once the route has drawn. */
+    @keyframes blink { 0%,94%,100% { transform: scaleY(1) }
+                        97% { transform: scaleY(.1) } }
+    @keyframes bob { 0%,100% { transform: translateY(0) }
+                      50% { transform: translateY(-4px) } }
+    .blink { animation: blink 5.5s ease-in-out infinite;
+              transform-origin: 45px 33px; }
+    .bob { animation: bob 3.4s ease-in-out infinite; }
+
+    /* The entrance. Every rule here animates FROM a hidden state to the
+       element's own natural one, with fill-mode backwards - so the resting
+       state in the stylesheet is the visible state. Hide-then-reveal would
+       leave the whole banner blank for anyone whose renderer skips animation,
+       which is the same trap the page audit checks for. */
+    @keyframes wipe { from { transform: scaleX(0) } }
+    @keyframes rise { from { opacity: 0; transform: translateY(9px) } }
+    @keyframes fade { from { opacity: 0 } }
+
+    .bd   { animation: wipe 1s linear backwards;
+             transform-origin: left center; transform-box: fill-box; }
+    .pr   { animation: rise .5s cubic-bezier(.2,.8,.3,1) backwards; }
+    .lb   { animation: fade .6s ease-out backwards; }
+
+    /* Motion off: everything is already in its resting state, so the only job
+       is to stop the loops and drop the delays. */
+    @media (prefers-reduced-motion: reduce) {
+      .blink, .bob, .bd, .pr, .lb { animation: none }
+    }
+
+    .pill { fill: #007F981A; stroke: #007F988C; stroke-width: 1.5; }
+    .txt  { fill: #0B6B7E; font-family: ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; font-size: 14px; font-weight: 600;
+             letter-spacing: .01em; }
+    .arw  { stroke: #0B6B7E; stroke-width: 2; fill: none;
+             stroke-linecap: round; stroke-linejoin: round;
+             animation: nudge 1.9s ease-in-out infinite; }
+    /* A sweep, not a flash: it crosses once every few seconds and is clipped
+       to the pill, so the badge reads as live without blinking at the reader.
+       White, because a highlight is light - and because an ink-coloured sweep
+       darkened the ground under its own label and took the text to 4.41:1.
+       White raises it instead: 5.49:1 light, 6.16:1 dark, at the worst frame. */
+    .shine { fill: #FFFFFF; opacity: .14;
+              animation: sweep 3.8s cubic-bezier(.4,0,.2,1) infinite; }
+    @keyframes nudge { 0%,100% { transform: translateX(0) }
+                        45% { transform: translateX(3.5px) } }
+    @keyframes sweep { 0% { transform: translateX(-90px) }
+                        55%,100% { transform: translateX(360px) } }
+    @media (prefers-reduced-motion: reduce) {
+      .arw, .shine { animation: none }
+      .shine { opacity: 0 }
+    }
+</style><clipPath id="c"><rect x="1" y="1" width="318" height="44" rx="22.0"/></clipPath><rect class="pill" x="1" y="1" width="318" height="44" rx="22.0"/><g clip-path="url(#c)"><rect class="shine" x="0" y="0" width="46" height="46" transform="skewX(-18)"/></g><text class="txt" x="26" y="28">Read the long version</text><path class="arw" d="M276 23 h16 m-6 -6 l6 6 l-6 6"/></svg>

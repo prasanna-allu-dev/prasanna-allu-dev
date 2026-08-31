@@ -9,6 +9,8 @@
       --c4: var(--era-6); --c5: var(--era-2);
     }
     text { font-family: ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; }
+
+    /* Idle loops, running once the route has drawn. */
     @keyframes blink { 0%,94%,100% { transform: scaleY(1) }
                         97% { transform: scaleY(.1) } }
     @keyframes bob { 0%,100% { transform: translateY(0) }
@@ -16,10 +18,27 @@
     .blink { animation: blink 5.5s ease-in-out infinite;
               transform-origin: 45px 33px; }
     .bob { animation: bob 3.4s ease-in-out infinite; }
+
+    /* The entrance. Every rule here animates FROM a hidden state to the
+       element's own natural one, with fill-mode backwards - so the resting
+       state in the stylesheet is the visible state. Hide-then-reveal would
+       leave the whole banner blank for anyone whose renderer skips animation,
+       which is the same trap the page audit checks for. */
+    @keyframes wipe { from { transform: scaleX(0) } }
+    @keyframes rise { from { opacity: 0; transform: translateY(9px) } }
+    @keyframes fade { from { opacity: 0 } }
+
+    .bd   { animation: wipe 1s linear backwards;
+             transform-origin: left center; transform-box: fill-box; }
+    .pr   { animation: rise .5s cubic-bezier(.2,.8,.3,1) backwards; }
+    .lb   { animation: fade .6s ease-out backwards; }
+
+    /* Motion off: everything is already in its resting state, so the only job
+       is to stop the loops and drop the delays. */
     @media (prefers-reduced-motion: reduce) {
-      .blink, .bob { animation: none }
+      .blink, .bob, .bd, .pr, .lb { animation: none }
     }
-</style><defs><linearGradient id="band3" x1="0" x2="1"><stop offset="0" stop-color="var(--era-4)"/><stop offset="1" stop-color="var(--era-6)"/></linearGradient></defs><rect x="33.5" y="146" width="280.8" height="13" rx="6.5" fill="var(--era-1)"/><rect x="317.3" y="146" width="150.7" height="13" rx="6.5" fill="var(--era-2)"/><rect x="471.1" y="146" width="64.0" height="13" rx="6.5" fill="var(--era-3)"/><rect x="538.1" y="146" width="308.4" height="13" rx="6.5" fill="url(#band3)"/><text x="32" y="178" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="var(--ink-3)" text-anchor="start">2008</text><text x="848" y="178" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="var(--era-6)" text-anchor="end">now</text><text x="173.91304347826087" y="178" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="var(--ink-2)" text-anchor="middle">Studying computer science</text><text x="392.69565217391306" y="178" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="var(--ink-2)" text-anchor="middle">US healthcare &amp; EDI</text><text x="503.072463768116" y="178" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="var(--ink-2)" text-anchor="middle">Food safety</text><text x="692.2898550724638" y="178" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="var(--ink-2)" text-anchor="middle">Commercial real estate &amp; enterprise IT</text><g transform="translate(139.91304347826087,110) scale(0.7)">
+</style><defs><linearGradient id="band3" x1="0" x2="1"><stop offset="0" stop-color="var(--era-4)"/><stop offset="1" stop-color="var(--era-6)"/></linearGradient></defs><rect class="bd" style="animation-duration:0.83s;animation-delay:0.00s" x="33.5" y="146" width="280.8" height="13" rx="6.5" fill="var(--era-1)"/><rect class="bd" style="animation-duration:0.45s;animation-delay:0.83s" x="317.3" y="146" width="150.7" height="13" rx="6.5" fill="var(--era-2)"/><rect class="bd" style="animation-duration:0.20s;animation-delay:1.29s" x="471.1" y="146" width="64.0" height="13" rx="6.5" fill="var(--era-3)"/><rect class="bd" style="animation-duration:0.92s;animation-delay:1.48s" x="538.1" y="146" width="308.4" height="13" rx="6.5" fill="url(#band3)"/><text x="32" y="178" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="var(--ink-3)" text-anchor="start">2008</text><text class="lb" style="animation-delay:2.95s" x="848" y="178" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="var(--era-6)" text-anchor="end">now</text><text class="lb" style="animation-delay:0.50s" x="173.91304347826087" y="178" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="var(--ink-2)" text-anchor="middle">Studying computer science</text><text class="lb" style="animation-delay:1.11s" x="392.69565217391306" y="178" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="var(--ink-2)" text-anchor="middle">US healthcare &amp; EDI</text><text class="lb" style="animation-delay:1.41s" x="503.072463768116" y="178" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="var(--ink-2)" text-anchor="middle">Food safety</text><text class="lb" style="animation-delay:2.03s" x="692.2898550724638" y="178" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="var(--ink-2)" text-anchor="middle">Commercial real estate &amp; enterprise IT</text><g class="pr" style="animation-delay:0.83s"><g transform="translate(139.91304347826087,110) scale(0.7)">
   <path d="M0 44 l10-40 h60 l10 40 z" fill="var(--panel)" stroke="var(--line)" stroke-width="3" stroke-linejoin="round"/>
   <path d="M7 40 l8-32 h50 l8 32 z" fill="var(--c1)" opacity=".08"/>
   <g stroke="var(--c1)" stroke-width="2.6" stroke-linecap="round" opacity=".9">
@@ -27,13 +46,13 @@
   </g>
   <rect x="-8" y="44" width="96" height="7" rx="3.5" fill="var(--line)"/>
   <rect x="30" y="46.4" width="20" height="2.2" rx="1.1" fill="#2A2018" opacity=".2"/>
-</g><g transform="translate(364.69565217391306,87)"><rect x="0" y="0.0" width="34" height="44" rx="5" fill="var(--panel)" stroke="var(--line)" stroke-width="2.6"/><rect x="0" y="0.0" width="34" height="44" rx="5" fill="#2A2018" opacity="0"/><rect x="11" y="7.699999999999999" width="34" height="44" rx="5" fill="var(--panel)" stroke="var(--line)" stroke-width="2.6"/><rect x="11" y="7.699999999999999" width="34" height="44" rx="5" fill="#2A2018" opacity="0"/><rect x="22" y="15.399999999999999" width="34" height="44" rx="5" fill="var(--panel)" stroke="var(--line)" stroke-width="2.6"/><g stroke="var(--ink-3)" stroke-width="2" stroke-linecap="round" opacity=".6"><path d="M30 29.4 h18M30 39.4 h18M30 49.4 h10"/></g></g><g transform="translate(487.072463768116,90) scale(0.7)">
+</g></g><g class="pr" style="animation-delay:1.29s"><g transform="translate(364.69565217391306,87)"><rect x="0" y="0.0" width="34" height="44" rx="5" fill="var(--panel)" stroke="var(--line)" stroke-width="2.6"/><rect x="0" y="0.0" width="34" height="44" rx="5" fill="#2A2018" opacity="0"/><rect x="11" y="7.699999999999999" width="34" height="44" rx="5" fill="var(--panel)" stroke="var(--line)" stroke-width="2.6"/><rect x="11" y="7.699999999999999" width="34" height="44" rx="5" fill="#2A2018" opacity="0"/><rect x="22" y="15.399999999999999" width="34" height="44" rx="5" fill="var(--panel)" stroke="var(--line)" stroke-width="2.6"/><g stroke="var(--ink-3)" stroke-width="2" stroke-linecap="round" opacity=".6"><path d="M30 29.4 h18M30 39.4 h18M30 49.4 h10"/></g></g></g><g class="pr" style="animation-delay:1.48s"><g transform="translate(487.072463768116,90) scale(0.7)">
   <rect x="0" y="0" width="46" height="80" rx="11" fill="var(--panel)" stroke="var(--line)" stroke-width="3"/>
   <rect x="6" y="10" width="34" height="50" rx="5" fill="var(--c3)"
         opacity=".2"/>
   <g stroke="var(--c3)" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 40 l6 6 12-14"/></g>
   <rect x="16" y="66" width="14" height="3.4" rx="1.7" fill="#2A2018" opacity=".28"/>
-</g><g transform="translate(606.2898550724638,32) scale(0.95,0.95)" style="--shirt:var(--c4);--skin:#C98B5E;--tie:var(--c1)">
+</g></g><g class="pr" style="animation-delay:2.40s"><g transform="translate(606.2898550724638,32) scale(0.95,0.95)" style="--shirt:var(--c4);--skin:#C98B5E;--tie:var(--c1)">
   <path d="M18 88 q-6 12 8 18" stroke="var(--shirt)" stroke-width="12" fill="none" stroke-linecap="round"/><path d="M72 88 q6 12-8 18" stroke="var(--shirt)" stroke-width="12" fill="none" stroke-linecap="round"/><circle cx="27" cy="107" r="6" fill="var(--skin)" stroke="var(--line)" stroke-width="2.2"/><circle cx="63" cy="107" r="6" fill="var(--skin)" stroke="var(--line)" stroke-width="2.2"/>
   <path d="M13 120 v-30 c0-17 14-31 32-31 s32 14 32 31 v30 z" fill="var(--shirt)" stroke="var(--line)" stroke-width="3" stroke-linejoin="round"/>
   <path d="M36 43 h18 v19 q-9 6-18 0z" fill="#A96F45" stroke="var(--line)" stroke-width="2.4" stroke-linejoin="round"/>
@@ -41,14 +60,12 @@
   <path d="M45 3 c-14.5 0-24 9.5-24 23 v9 c0 12.5 9.8 21 24 21 s24-8.5 24-21 v-9 c0-13.5-9.5-23-24-23z" fill="var(--skin)" stroke="var(--line)" stroke-width="3"/>
   <ellipse cx="20.6" cy="36" rx="3.2" ry="4.6" fill="var(--skin)" stroke="var(--line)" stroke-width="2.4"/>
   <ellipse cx="69.4" cy="36" rx="3.2" ry="4.6" fill="var(--skin)" stroke="var(--line)" stroke-width="2.4"/>
-  <path d="M19.5 27 C 18 10, 29 1, 45 1 C 61 1, 72 10, 70.5 27
-           C 69 20.5, 65.5 16.5, 61 14.5 C 53.5 20.5, 40 21, 32.5 17.5
-           C 27.5 18.5, 22.5 21.5, 19.5 27 Z" fill="#241C17"/>
+  <path d="M19.5 27 C 18 10, 29 1, 45 1 C 61 1, 72 10, 70.5 27 C 69 20.5, 65.5 16.5, 61 14.5 C 53.5 20.5, 40 21, 32.5 17.5 C 27.5 18.5, 22.5 21.5, 19.5 27 Z" fill="#241C17"/>
   <path d="M29.2 27 h10.2M60.8 27 h-10.2" stroke="#2A2018" stroke-width="2.2"
         fill="none" stroke-linecap="round"/>
   <g class="blink"><ellipse cx="34" cy="33" rx="3.7" ry="4.8" fill="#2A2018"/><ellipse cx="56" cy="33" rx="3.7" ry="4.8" fill="#2A2018"/><circle cx="35.4" cy="31.2" r="1.35" fill="#FFFFFF"/><circle cx="57.4" cy="31.2" r="1.35" fill="#FFFFFF"/></g>
   <path d="M39 44 q6 6 12 0" stroke="#2A2018" stroke-width="2.6" fill="none" stroke-linecap="round"/>
-</g><g transform="translate(698.2898550724638,110) scale(0.7)">
+</g></g><g class="pr" style="animation-delay:2.58s"><g transform="translate(698.2898550724638,110) scale(0.7)">
   <path d="M0 44 l10-40 h60 l10 40 z" fill="var(--panel)" stroke="var(--line)" stroke-width="3" stroke-linejoin="round"/>
   <path d="M7 40 l8-32 h50 l8 32 z" fill="var(--c2)" opacity=".08"/>
   <g stroke="var(--c2)" stroke-width="2.6" stroke-linecap="round" opacity=".9">
@@ -56,7 +73,7 @@
   </g>
   <rect x="-8" y="44" width="96" height="7" rx="3.5" fill="var(--line)"/>
   <rect x="30" y="46.4" width="20" height="2.2" rx="1.1" fill="#2A2018" opacity=".2"/>
-</g><g transform="translate(800.2898550724638,96) scale(0.8)"><g class="bob">
+</g></g><g class="pr" style="animation-delay:2.76s"><g transform="translate(800.2898550724638,96) scale(0.8)"><g class="bob">
   <path d="M28 14 v-8" stroke="var(--line)" stroke-width="3"
         stroke-linecap="round"/>
   <circle cx="28" cy="4" r="4.5" fill="var(--c5)" stroke="var(--line)" stroke-width="2.6"/>
@@ -70,4 +87,4 @@
   <circle cx="28" cy="51" r="3" fill="var(--panel)" stroke="var(--line)" stroke-width="2" opacity=".8"/>
   <path d="M2 34 h-7M54 34 h7" stroke="var(--line)" stroke-width="3"
         stroke-linecap="round"/>
-</g></g></svg>
+</g></g></g></svg>
