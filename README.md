@@ -1,210 +1,123 @@
-<h1 align="center">Hi 👋, I'm Prasanna Allu</h1>
-<h3 align="center">Senior Full-Stack Developer | Cloud & AI Enthusiast | 11 Years of Experience</h3>
+<!-- Generated from data/profile.json by build.py. Edits here are
+     overwritten on the next build - change the data instead. -->
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=allubalu&label=Profile%20views&color=0e75b6&style=flat" alt="allubalu" />
-  <a href="https://github.com/allubalu?tab=followers"><img src="https://img.shields.io/github/followers/allubalu?label=Followers&style=social" alt="GitHub followers"></a>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="banner-dark.svg">
+  <img alt="11 years as a route: Studying computer science, then US healthcare & EDI, then Food safety, then Commercial real estate & enterprise IT." src="banner.svg" width="880">
+</picture>
 
----
+# Prasanna Allu
 
-- 🔭 I'm currently working at **JLL Technologies (CoE)** as a Senior Full-Stack Developer
+**Senior Full-Stack Developer & Technical Lead** at JLL Technologies (Centre of Excellence), Bangalore, India.
 
-- 🤖 Currently developing **MCP Servers** to automate internal workflows and improve cross-team efficiency
+> Eleven years of finding the manual thing and quietly making it run itself.
 
-- 🧠 I'm passionate about **Agentic AI, CrewAI, RAG, and AI-driven developer tooling**
-
-- 🏗️ I build scalable APIs processing **2M+ requests/day** with sub-200ms latency
-
-- 🌱 I'm currently exploring **Gen AI, MCP Protocol, and Kubernetes**
-
-- 💬 Ask me about **.NET Core, Azure, C#, React, Kafka, MCP, AI Automation**
-
-- 📫 How to reach me: **allubalu3@live.com**
-
-- 📄 Know about my experiences: [My Resume](https://github.com/allubalu)
-
-- 🏆 **4x Performance Excellence Award** recipient | **Microsoft Certified Azure Developer Associate**
+**[The long version, with the working out →](https://allubalu.github.io/)**  ·  [LinkedIn](https://www.linkedin.com/in/prasanna-allu-7227066b/)  ·  [allubalu3@live.com](mailto:allubalu3@live.com)
 
 ---
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-  <a href="https://linkedin.com/in/balu-allu-7227066b" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
-  </a>
-  <a href="mailto:allubalu3@live.com" target="_blank">
-    <img align="center" src="https://img.shields.io/badge/Email-allubalu3%40live.com-blue?style=flat&logo=microsoft-outlook" alt="Email" height="30" />
-  </a>
-</p>
+## What that has meant
+
+The work has always been to notice that, and then take it away. Claims cleared by rules instead of clerks. Audits on a phone instead of a clipboard. Approvals that stop living in someone's inbox. Logs anyone can read at 2am without waking me up.
+
+These days it is my own team's busywork on the list. A bot that reads pull requests before we do, and an MCP server that has read the documentation so nobody has to ask me.
+
+| Years shipping | Apps integrated | Requests / day | Awards | Industries |
+| ---: | ---: | ---: | ---: | ---: |
+| **11** | **150+** | **2M+** | **6** | **4** |
+
+<sub>2M+ requests / day, at sub-200ms latency · industries: health, food, property, IT</sub>
+
+<details>
+<summary><b>The same thing in CV language</b></summary>
+<br>
+
+> Senior Full-Stack Developer and Technical Lead with 11 years' experience building production-grade, AI-augmented systems on Microsoft Azure, including APIs serving 2M+ requests/day at sub-200ms latency. Core strength is production readiness: reliability, observability and security at scale, paired with hands-on delivery of agentic AI tooling in real engineering workflows.
+
+</details>
 
 ---
 
-<h3 align="left">Languages and Tools:</h3>
+## The route
 
-#### Backend & Cloud
-<p align="left">
-  <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt=".NET" width="40" height="40"/>
-  </a>
-  <a href="https://dotnet.microsoft.com/apps/aspnet" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg" alt=".NET Core" width="40" height="40"/>
-  </a>
-  <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" width="40" height="40"/>
-  </a>
-  <a href="https://azure.microsoft.com/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="Azure" width="40" height="40"/>
-  </a>
-  <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" width="40" height="40"/>
-  </a>
-  <a href="https://kafka.apache.org/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg" alt="Kafka" width="40" height="40"/>
-  </a>
-  <a href="https://kubernetes.io/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="Kubernetes" width="40" height="40"/>
-  </a>
-  <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" width="40" height="40"/>
-  </a>
-</p>
+```mermaid
+timeline
+    section Studying computer science
+        2008-2011 : Diploma, CSE
+        2011-2014 : B.Tech, CSE
+    section US healthcare & EDI
+        2015-2018 : Software Engineer
+    section Food safety
+        2018-2019 : BI Developer
+    section Commercial real estate & enterprise IT
+        2020-2022 : Developer Associate
+        2022-2024 : Software Engineer 2
+        2024-now : Senior Full-Stack Dev
+```
 
-#### Frontend
-<p align="left">
-  <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="40" height="40"/>
-  </a>
-  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/>
-  </a>
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="40" height="40"/>
-  </a>
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="40" height="40"/>
-  </a>
-</p>
-
-#### Databases
-<p align="left">
-  <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer">
-    <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="SQL Server" width="40" height="40"/>
-  </a>
-  <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" width="40" height="40"/>
-  </a>
-  <a href="https://redis.io/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="Redis" width="40" height="40"/>
-  </a>
-</p>
-
-#### AI & Automation
-<p align="left">
-  <a href="https://github.com/features/copilot" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/GitHub%20Copilot-000?style=for-the-badge&logo=githubcopilot&logoColor=white" alt="GitHub Copilot" height="28"/>
-  </a>
-  <a href="https://www.cursor.com/" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/Cursor%20IDE-000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor" height="28"/>
-  </a>
-  <a href="https://modelcontextprotocol.io/" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/MCP%20Protocol-4A90D9?style=for-the-badge" alt="MCP" height="28"/>
-  </a>
-  <a href="https://www.crewai.com/" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/CrewAI-FF6B35?style=for-the-badge" alt="CrewAI" height="28"/>
-  </a>
-</p>
-
-#### Monitoring & Security
-<p align="left">
-  <a href="https://www.datadoghq.com/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/datadoghq/datadoghq-icon.svg" alt="Datadog" width="40" height="40"/>
-  </a>
-  <a href="https://www.splunk.com/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/splunk/splunk-icon.svg" alt="Splunk" width="40" height="40"/>
-  </a>
-  <a href="https://www.postman.com/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" width="40" height="40"/>
-  </a>
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="40" height="40"/>
-  </a>
-</p>
-
-#### BI & Reporting
-<p align="left">
-  <a href="https://www.tableau.com/" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau" height="28"/>
-  </a>
-  <a href="https://powerbi.microsoft.com/" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" height="28"/>
-  </a>
-</p>
+<sub>The banner draws the same years to scale; this names the posts.</sub>
 
 ---
 
-<h3 align="left">Certifications:</h3>
+## Public code
 
-- 🏅 **Microsoft Certified Azure Developer Associate**
-- 🏅 **Microsoft India App Fest** — Bangalore, 2013
+**[mcp-rbac-demo](https://github.com/allubalu/mcp-rbac-demo)** — C#  
+An MCP server where authorisation is enforced per tool call, not per session. Built on the official C# SDK to find out where the protocol puts the seam between a model and a permission.
 
----
+**[registry-payments](https://github.com/allubalu/registry-payments)** — TypeScript  
+A payments domain layer with no framework in it: money as bigint, each jurisdiction's rules as a data pack rather than a branch, 360 tests. Adding a country is a config file, which was the whole point.
 
-<h3 align="left">Career Highlights:</h3>
+<sub>The rest of what is public here is older - tutorials and assessments from 2019-2021, kept because deleting your own learning is a strange thing to do.</sub>
 
-| Highlight | Impact |
-|-----------|--------|
-| APIs processing 2M+ requests/day | Sub-200ms latency |
-| Claude Bot in CI/CD pipelines | 50% reduction in PR review time |
-| Enterprise BI systems | 30% improvement in decision-making efficiency |
-| Reusable .NET components | 20+ components, 40% faster feature delivery |
-| Agile/Scrum delivery | 40% improvement in sprint velocity |
-| MCP Server development | Automating internal workflows |
-| Agentic AI (CrewAI) | Integrated with Microsoft Teams |
-| RAG-based data retrieval | Natural language financial analytics |
-| Security compliance | Zero OOSLA incidents |
+### Why it is quiet here
+
+Eleven years of this work sits in private repositories at two employers: a claims engine, an audit app that replaced a clipboard, an access platform. What is public here is deliberate and small, roughly one repository per technique I wanted to be able to point at. A contribution graph measures the open-source half of a career. Mine has mostly been the other half.
 
 ---
 
-<h3 align="left">Notable Projects:</h3>
+## Stack, by the year it started
 
-| Project | Description |
-|---------|-------------|
-| **Technology Access Tool** | Enterprise platform integrating AD & Kafka — 100+ apps, 2M+ daily API requests via Azure Functions & AKS |
-| **MCP RBAC Demo** | ASP.NET Core MCP server with Role-Based Access Control on every tool call |
-| **UniForm** | Workflow automation for real estate operations across 20+ departments |
-| **Adjudication Engine** | Automated healthcare claims processing — 70% auto-adjudication rate |
-| **GreenTick** | FoodTech compliance suite (Android, iOS, Web) — 35% compliance improvement |
+| Since | |
+| :--- | :--- |
+| `2015` | C# & .NET · SQL Server & relational data |
+| `2018` | Tableau & Power BI |
+| `2020` | Microsoft Azure |
+| `2022` | Datadog & Splunk · Kafka & event-driven design |
+| `2024` | Agentic AI (MCP, Claude, CrewAI) · React |
 
----
-
-<h3 align="left">GitHub Stats:</h3>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=allubalu&show_icons=true&theme=tokyonight&locale=en" alt="allubalu" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=allubalu&theme=tokyonight" alt="allubalu" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=allubalu&show_icons=true&theme=tokyonight&locale=en&layout=compact" alt="allubalu" />
-</p>
+<sub>Years in production, not self-rated proficiency.</sub>
 
 ---
 
-<h3 align="left">Support:</h3>
+## Recognition
 
-<p>
-  If you find my projects helpful, consider giving them a ⭐ on GitHub!
-</p>
+6 awards, all at JLL.
+
+| | |
+| :--- | :--- |
+| **Security Champion** | Apr 2026 · nominated by the Vice President and Chief Architect |
+| **Domain Expertise & Adaptability** | Sep 2025 |
+| **TAT UI Go Live** | Sep 2025 |
+| **Subject Matter Expert: Datadog** | Oct 2024 |
+| **JLLT Technology Engineering Award** | Jan 2024 |
+| **Certificate of Appreciation** | Sep 2020 |
 
 ---
 
-<p align="center">
-  <i>"Results-driven Senior Full-Stack Developer delivering scalable, high-performance cloud and AI-integrated applications across enterprise domains."</i>
-</p>
+## Credentials
+
+| | Issuer | |
+| :--- | :--- | :--- |
+| EF SET English Certificate: C1 Advanced | EF SET | Jul 2026 |
+| Agentic AI | DeepLearning.AI | Jul 2026 |
+| Microsoft Certified: Azure Developer Associate | Microsoft | **expired Jan 2026** |
+| Cloud Architect certification | — | _in progress_ |
+| Microsoft India App Fest | Microsoft India | 2013 |
+
+---
+
+<sub>Every figure here is read from one source file. Impact percentages are self-reported and unaudited; ask, and I will explain how each was measured. A few entries are stated from memory rather than a certificate. Drawings are original.</sub>
+
+The rest of it — the projects, the people I worked with, where the habit started — is at **[allubalu.github.io](https://allubalu.github.io/)**.
+
+<sub>There is always another manual thing. If yours has a name, I would like to hear it.</sub>
