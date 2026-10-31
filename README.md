@@ -9,7 +9,7 @@
 
 <a href="https://prasanna-allu-dev.github.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="cta-dark.svg"><img alt="Read the long version" src="cta.svg" width="320"></picture></a>
 
-[LinkedIn](https://www.linkedin.com/in/prasanna-allu-7227066b/) &nbsp;·&nbsp; [allubalu3@live.com](mailto:allubalu3@live.com) &nbsp;·&nbsp; [CV (PDF)](https://prasanna-allu-dev.github.io/cv.pdf)
+[LinkedIn](https://www.linkedin.com/in/prasanna-allu-7227066b/) &nbsp;·&nbsp; [allubalu3@gmail.com](mailto:allubalu3@gmail.com) &nbsp;·&nbsp; [CV (PDF)](https://prasanna-allu-dev.github.io/cv.pdf)
 
 ---
 
