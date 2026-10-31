@@ -1,53 +1,38 @@
-<!-- Generated from data/profile.json by build.py. Edits here are
-     overwritten on the next build - change the data instead. -->
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="banner-dark.svg">
-  <img alt="11 years as a route: Studying computer science, then US healthcare & EDI, then Food safety, then Commercial real estate & enterprise IT." src="banner.svg" width="880">
+  <img alt="11 years as a route: Studying computer science, then US healthcare and EDI, then Food safety, then Commercial real estate and enterprise IT." src="banner.svg" width="880">
 </picture>
 
 # Prasanna Allu
 
-**Senior Full-Stack Developer & Technical Lead** at JLL Technologies (Centre of Excellence), Bangalore, India.
+**Senior Software Engineer** at JLL Technologies, Dubai. Eleven years building production software end to end, full stack on .NET, Azure and React, and now LLM tooling with Claude and MCP.
 
-> Eleven years of finding the manual thing and quietly making it run itself.
+<a href="https://prasanna-allu-dev.github.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="cta-dark.svg"><img alt="Read the long version" src="cta.svg" width="320"></picture></a>
 
-<a href="https://allubalu.github.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="cta-dark.svg"><img alt="Read the long version" src="cta.svg" width="320"></picture></a>
-
-[LinkedIn](https://www.linkedin.com/in/prasanna-allu-7227066b/) &nbsp;·&nbsp; [allubalu3@live.com](mailto:allubalu3@live.com)
+[LinkedIn](https://www.linkedin.com/in/prasanna-allu-7227066b/) &nbsp;·&nbsp; [allubalu3@live.com](mailto:allubalu3@live.com) &nbsp;·&nbsp; [CV (PDF)](https://prasanna-allu-dev.github.io/cv.pdf)
 
 ---
 
-| Years shipping | Apps integrated | Requests / day | Awards | Industries |
-| ---: | ---: | ---: | ---: | ---: |
-| **11** | **150+** | **2M+** | **6** | **4** |
+| Years shipping | Requests / day | Apps on the access platform | Recognitions |
+| ---: | ---: | ---: | ---: |
+| **11** | **2M+** | **150+** | **6** |
 
-<sub>2M+ requests / day, at sub-200ms latency · industries: health, food, property, IT</sub>
-
-**In production since.** **2015** C# & .NET, SQL Server & relational data &nbsp;·&nbsp; **2018** Tableau & Power BI &nbsp;·&nbsp; **2020** Microsoft Azure &nbsp;·&nbsp; **2022** Datadog & Splunk, Kafka & event-driven design &nbsp;·&nbsp; **2024** Agentic AI (MCP, Claude, CrewAI), React
-
-**6 awards, all at JLL.** Most recent:
-Security Champion, Apr 2026, nominated by the Vice President and Chief Architect.
-
-<details>
-<summary>The same thing in CV language</summary>
-<br>
-
-> Senior Full-Stack Developer and Technical Lead with 11 years' experience building production-grade, AI-augmented systems on Microsoft Azure, including APIs serving 2M+ requests/day at sub-200ms latency. Core strength is production readiness: reliability, observability and security at scale, paired with hands-on delivery of agentic AI tooling in real engineering workflows.
-
-</details>
+<sub>2M+ requests a day at sub-200ms latency · 6 recognitions, all at JLL, most recently Security Champion (Apr 2026), nominated by the VP and Chief Architect.</sub>
 
 ---
 
-## Public code
+## Public code, each written up as a technical design
 
-**[mcp-rbac-demo](https://github.com/allubalu/mcp-rbac-demo)** — C#  
-An MCP server where authorisation is enforced per tool call, not per session. Built on the official C# SDK to find out where the protocol puts the seam between a model and a permission.
+**[agent-guardrails](https://github.com/prasanna-allu-dev/agent-guardrails)** · TypeScript · [design](https://prasanna-allu-dev.github.io/work/agent-guardrails.html)  
+Policy-as-code rules that run inside Claude Code as a hook and refuse an unsafe edit before it is saved. Measured over 46 real agent runs, hook on versus off; the eval found two ways around the hook.
 
-**[registry-payments](https://github.com/allubalu/registry-payments)** — TypeScript  
-A payments domain layer with no framework in it: money as bigint, each jurisdiction's rules as a data pack rather than a branch, 360 tests. Adding a country is a config file, which was the whole point.
+**[mcp-rbac-demo](https://github.com/prasanna-allu-dev/mcp-rbac-demo)** · C# · [design](https://prasanna-allu-dev.github.io/work/mcp-rbac.html)  
+An MCP server that authorizes every tool call and shows each caller only the tools they may run. Deny by default, checked at boot. 108 tests, 12 of them end to end over the real protocol.
 
-<sub>The rest of what is public here is older - tutorials and assessments from 2019-2021, kept because deleting your own learning is a strange thing to do.</sub>
+**[registry-payments](https://github.com/prasanna-allu-dev/registry-payments)** · TypeScript · [design](https://prasanna-allu-dev.github.io/work/registry-payments.html)  
+The domain layer of a multi-jurisdiction payment platform: money as bigint minor units, each jurisdiction's fees as validated data, 360 tests. Four jurisdictions went in without a line of engine code.
+
+<sub>The rest of what is public here is older: tutorials and assessments from 2019 to 2021, kept because deleting your own learning is a strange thing to do.</sub>
 
 ### Why it is quiet here
 
@@ -59,14 +44,14 @@ Eleven years of this work sits in private repositories at two employers: a claim
 
 | | Issuer | |
 | :--- | :--- | :--- |
-| EF SET English Certificate: C1 Advanced | EF SET | Jul 2026 |
 | Agentic AI | DeepLearning.AI | Jul 2026 |
-| Microsoft Certified: Azure Developer Associate | Microsoft | **expired Jan 2026** |
-| Cloud Architect certification | — | _in progress_ |
+| Claude Certified Architect | Anthropic | _in progress_ |
+| EF SET English Certificate: C1 Advanced | EF SET | Jul 2026 |
+| Microsoft Certified: Azure Developer Associate | Microsoft | Jan 2025, expired Jan 2026 |
 | Microsoft India App Fest | Microsoft India | 2013 |
 
 ---
 
-<sub>Every figure here is read from one source file. Impact percentages are self-reported and unaudited; ask, and I will explain how each was measured. A few entries are stated from memory rather than a certificate. Drawings are original.</sub>
+<sub>Impact percentages are self-reported and unaudited; ask, and I will explain how each was measured.</sub>
 
-There is always another manual thing. If yours has a name, I would like to hear it. The projects, the people I worked with and where the habit started are at **[allubalu.github.io](https://allubalu.github.io/)**.
+There is always another manual thing. If yours has a name, I would like to hear it. The case studies, the designs and the career are at **[prasanna-allu-dev.github.io](https://prasanna-allu-dev.github.io/)**.
